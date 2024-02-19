@@ -181,8 +181,7 @@ class AutoYAMLDirective(Directive):
         else:
             loader = Loader
         for doc in compose_all(source, loader):
-            docs = self._generate_documentation(self._parse_document(doc, comments))
-            if docs is not None:
+            if (docs := self._generate_documentation(self._parse_document(doc, comments))) is not None:
                 yield docs
 
 
