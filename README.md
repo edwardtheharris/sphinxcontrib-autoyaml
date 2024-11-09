@@ -49,18 +49,18 @@ Documenting single YAML file.
 
 ## Options
 
-Options available to use in your configuration:
-
-- *autoyaml_root*(`..`)
-  Look for YAML files relatively to this directory.
-- *autoyaml_doc_delimiter*(`###`)
-  Character(s) which start a documentation comment.
-- *autoyaml_comment*(`#`)
-  Comment start character(s).
-- *autoyaml_level*(`1`)
-  Parse comments from nested structures n-levels deep.
-- *autoyaml_safe_loader*(`False`)
-  Whether to use YAML SafeLoader
+```python
+# Look for YAML files relatively to this directory.
+autoyaml_root = ".."
+# Character(s) which start a documentation comment.
+autoyaml_doc_delimiter = "###"
+# Comment start character(s).
+autoyaml_comment = "#"
+# Parse comments from nested structures n-levels deep.
+autoyaml_level = 1
+# Whether to use YAML SafeLoader
+autoyaml_safe_loader = False
+```
 
 ### Default options
 
